@@ -9,4 +9,4 @@ fetch('https://reqres.in/api/users', {         // fetch return promise so to res
 })
   .then((res) => res.json())                          //json()also return promise
   .then((data) => console.log(data))
-  .catch((err) => console.log('error'));
+  .catch((err) => console.log('error'));            // new changes
