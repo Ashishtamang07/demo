@@ -1,4 +1,4 @@
-fetch('https://reqres.in/api/users', {
+fetch('https://reqres.in/api/users', {         // fetch return promise so to resolve promise we use .then
   method: 'post',
   headers: {
     'content-Type': 'application/json',
@@ -7,6 +7,6 @@ fetch('https://reqres.in/api/users', {
     name: 'ashish',
   }),
 })
-  .then((res) => res.json())
+  .then((res) => res.json())                          //json()also return promise
   .then((data) => console.log(data))
   .catch((err) => console.log('error'));
